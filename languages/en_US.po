@@ -1,0 +1,502 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Renovation 1.0\n"
+"POT-Creation-Date: 2015-10-23 23:05+0700\n"
+"PO-Revision-Date: 2015-10-23 23:05+0700\n"
+"Last-Translator: \n"
+"Language-Team: ThemeMove <contact@thememove.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_html;esc_html_e\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:15
+msgid "Page not found"
+msgstr ""
+
+#: ../404.php:16
+msgid "Whoops, sorry, this page does not exist."
+msgstr ""
+
+#: ../comments.php:56
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:74
+msgid "Comments are closed."
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:52
+msgid "Background Color"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:53
+msgid "Background Image"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:54
+msgid "No Repeat"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:55
+msgid "Repeat All"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:56
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:57
+msgid "Repeat Vertically"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:58
+msgid "Inherit"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:59
+msgid "Background Repeat"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:60
+msgid "Cover"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:61
+msgid "Contain"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:62
+msgid "Background Size"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:63
+msgid "Fixed"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:64
+msgid "Scroll"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:65
+msgid "Background Attachment"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:66
+msgid "Left Top"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:67
+msgid "Left Center"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:68
+msgid "Left Bottom"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:69
+msgid "Right Top"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:70
+msgid "Right Center"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:71
+msgid "Right Bottom"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:72
+msgid "Center Top"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:73
+msgid "Center Center"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:74
+msgid "Center Bottom"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:75
+msgid "Background Position"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:76
+msgid "Background Opacity"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:77
+msgid "ON"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:78
+msgid "OFF"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:79
+msgid "All"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:80
+msgid "Cyrillic"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:81
+msgid "Cyrillic Extended"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:82
+msgid "Devanagari"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:83
+msgid "Greek"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:84
+msgid "Greek Extended"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:85
+msgid "Khmer"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:86
+msgid "Latin"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:87
+msgid "Latin Extended"
+msgstr ""
+
+#: ../core/customizer/kirki/includes/class-kirki-toolkit.php:88
+msgid "Vietnamese"
+msgstr ""
+
+#: ../inc/back-compat.php:38 ../inc/back-compat.php:48
+#: ../inc/back-compat.php:62
+#, php-format
+msgid ""
+"ThemeMove requires at least WordPress version 3.9. You are running version "
+"%s. Please upgrade and try again."
+msgstr ""
+
+#: ../inc/customizer/io.php:12 ../inc/customizer/io.php:18
+msgid "Export"
+msgstr ""
+
+#: ../inc/customizer/io.php:15
+msgid ""
+"Click the button below to export the customization settings for this theme."
+msgstr ""
+
+#: ../inc/customizer/io.php:20 ../inc/customizer/io.php:25
+msgid "Import"
+msgstr ""
+
+#: ../inc/customizer/io.php:23
+msgid "Upload a file to import customization settings for this theme."
+msgstr ""
+
+#: ../inc/customizer/setups/footer-bg.php:13
+msgid "Choose a background image for your footer"
+msgstr ""
+
+#: ../inc/customizer/setups/site-general.php:149
+msgid "Back to top"
+msgstr ""
+
+#: ../inc/customizer/setups/site-general.php:150
+msgid "Enabling this option will display a Back to Top button on every page"
+msgstr ""
+
+#: ../inc/extras.php:155
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../inc/meta-box.php:163
+msgid "Check this box to disable comment form of the page"
+msgstr ""
+
+#: ../inc/template-tags.php:73
+msgid "Posts navigation"
+msgstr ""
+
+#: ../inc/template-tags.php:108
+msgid "Post navigation"
+msgstr ""
+
+#: ../inc/tgm-plugin-activation.php:3353
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../inc/vc-params/thememove-responsive/thememove_responsive.php:38
+#: ../inc/vc-shortcode/thememove-blog.php:126
+msgid "1 columns - 1/1 - 12 items in a row"
+msgstr ""
+
+#: ../inc/vc-params/thememove-responsive/thememove_responsive.php:39
+#: ../inc/vc-shortcode/thememove-blog.php:127
+msgid "2 columns - 1/6 - 6 items in a row"
+msgstr ""
+
+#: ../inc/vc-params/thememove-responsive/thememove_responsive.php:40
+#: ../inc/vc-shortcode/thememove-blog.php:128
+msgid "3 columns - 1/4 - 4 items in a row"
+msgstr ""
+
+#: ../inc/vc-params/thememove-responsive/thememove_responsive.php:41
+#: ../inc/vc-shortcode/thememove-blog.php:129
+msgid "4 columns - 1/3 - 3 items in a row"
+msgstr ""
+
+#: ../inc/vc-params/thememove-responsive/thememove_responsive.php:42
+#: ../inc/vc-shortcode/thememove-blog.php:130
+msgid "6 columns - 1/2 - 2 items in a row"
+msgstr ""
+
+#: ../inc/vc-params/thememove-responsive/thememove_responsive.php:43
+#: ../inc/vc-shortcode/thememove-blog.php:131
+msgid "12 columns - 1/1 - 1 item in a row"
+msgstr ""
+
+#: ../inc/vc-params/thememove-responsive/thememove_responsive.php:60
+msgid "Default value from \"Number of items in a row\" attribute"
+msgstr ""
+
+#: ../inc/vc-params/thememove-responsive/thememove_responsive.php:63
+msgid "Inherit from smaller"
+msgstr ""
+
+#: ../inc/vc-params/thememove-responsive/thememove_responsive.php:86
+msgid "Device"
+msgstr ""
+
+#: ../inc/vc-params/thememove-responsive/thememove_responsive.php:87
+msgid "Item width"
+msgstr ""
+
+#: ../inc/vc-params/thememove-responsive/thememove_responsive.php:88
+msgid "Hide on device?"
+msgstr ""
+
+#: ../inc/vc-shortcode/thememove-blog.php:121
+msgid "Item Width"
+msgstr ""
+
+#: ../inc/vc-shortcode/thememove-blog.php:122
+msgid "Enter item width in a row (has 12 columns)"
+msgstr ""
+
+#: ../inc/vc-shortcode/thememove-blog.php:125
+msgid "Default (6 columns - 1/2 - 2 items in a row)"
+msgstr ""
+
+#: ../inc/vc-shortcode/thememove-blog.php:208
+msgid "Responsive Options"
+msgstr ""
+
+#: ../inc/vc-shortcode/thememove-blog.php:210
+msgid "Responsiveness"
+msgstr ""
+
+#: ../inc/vc-shortcode/thememove-blog.php:212
+msgid "Adjust Number of items in a row for different screen sizes."
+msgstr ""
+
+#: ../inc/vc-shortcode/thememove-gmaps.php:34
+msgid ""
+"Enter address or coordinate. To learn how to get coordinates, visit <a href="
+"\"https://support.google.com/maps/answer/18539?hl=en\" target=\"_blank"
+"\">here</a>"
+msgstr ""
+
+#: ../inc/vc-shortcode/thememove-gmaps.php:115
+msgid ""
+"To get the style snippet, visit <a href=\"https://snazzymaps.com\" target="
+"\"_blank\">Sanzzymaps</a> or <a href=\"http://www.mapstylr.com/\" target="
+"\"_blank\">Mapstylr</a>."
+msgstr ""
+
+#: ../inc/vc-template/thememove_project_details.php:27
+#: ../inc/vc-template/thememove_project_share.php:16
+msgid "Project Details Shortcode only available for \"Projects\" content type."
+msgstr ""
+
+#: ../inc/vc-template/thememove_project_details.php:34
+msgid "Date"
+msgstr ""
+
+#: ../inc/vc-template/thememove_project_details.php:42
+#: ../projects/single-project/meta.php:52
+msgid "Client"
+msgstr ""
+
+#: ../inc/vc-template/thememove_project_details.php:50
+#: ../projects/single-project/meta.php:59
+msgid "Location"
+msgstr ""
+
+#: ../inc/vc-template/thememove_project_details.php:58
+#: ../projects/single-project/meta.php:66
+msgid "Value"
+msgstr ""
+
+#: ../inc/vc-template/thememove_project_details.php:66
+msgid "Categories"
+msgstr ""
+
+#: ../inc/vc-template/thememove_project_details.php:74
+msgid "Link"
+msgstr ""
+
+#: ../inc/vc-template/thememove_project_details.php:75
+#: ../projects/single-project/meta.php:74
+msgid "Visit project"
+msgstr ""
+
+#: ../index.php:28 ../index.php:34
+msgid "Blog"
+msgstr ""
+
+#: ../projects/content-project.php:51 ../template-parts/content-grid.php:33
+#: ../template-parts/content-list.php:40 ../template-parts/content.php:36
+msgid "Read More"
+msgstr ""
+
+#: ../projects/single-project/description.php:17
+msgid "Project Description"
+msgstr ""
+
+#: ../projects/single-project/meta.php:15
+msgid "Project Details"
+msgstr ""
+
+#: ../projects/single-project/meta.php:45
+msgid "Date Completed"
+msgstr ""
+
+#: ../projects/single-project/meta.php:73
+msgid "Link:"
+msgstr ""
+
+#: ../template-parts/content-grid.php:54 ../template-parts/content-list.php:61
+msgid "Share "
+msgstr ""
+
+#: ../template-parts/content-list.php:29
+msgid ", "
+msgstr ""
+
+#: ../template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: ../template-parts/content-none.php:21
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../template-parts/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../template-parts/content-none.php:30
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../woocommerce/cart/cart-shipping.php:22
+msgid "Caculate Shipping"
+msgstr ""
+
+#: ../woocommerce/cart/cart-shipping.php:58
+msgid "Please use the shipping calculator to see available shipping methods."
+msgstr ""
+
+#: ../woocommerce/cart/cart-shipping.php:62
+msgid ""
+"Please continue to the checkout and enter your full address to see if there "
+"are any available shipping methods."
+msgstr ""
+
+#: ../woocommerce/cart/cart-shipping.php:66
+msgid "Please fill in your details to see available shipping methods."
+msgstr ""
+
+#: ../woocommerce/cart/cart-totals.php:19
+msgid "Cart Totals"
+msgstr ""
+
+#: ../woocommerce/cart/cart-totals.php:24
+#: ../woocommerce/checkout/review-order.php:50
+msgid "Subtotal"
+msgstr ""
+
+#: ../woocommerce/cart/cart-totals.php:45
+#: ../woocommerce/checkout/review-order.php:71
+msgid "Shipping and Handling"
+msgstr ""
+
+#: ../woocommerce/cart/cart-totals.php:78 ../woocommerce/cart/cart.php:30
+#: ../woocommerce/checkout/review-order.php:18
+#: ../woocommerce/checkout/review-order.php:103
+msgid "Total"
+msgstr ""
+
+#: ../woocommerce/cart/cart-totals.php:90
+#, php-format
+msgid " (taxes estimated for %s)"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:27 ../woocommerce/checkout/review-order.php:17
+msgid "Product"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:28
+msgid "Price"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:29
+msgid "Quantity"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:116
+msgid "Update Cart"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:144
+msgid "Shipping"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:155
+msgid "Coupon"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:156
+msgid "Coupon code"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:157
+msgid "Apply Coupon"
+msgstr ""
+
+#: ../woocommerce/loop/orderby.php:17
+msgid "Shop filter"
+msgstr ""
+
+#: ../woocommerce/loop/result-count.php:31
+msgid "Showing the single result"
+msgstr ""
