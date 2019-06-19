@@ -1,0 +1,326 @@
+
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html>
+<!--<![endif]-->
+<head>
+
+
+<!--js-->
+<script src="../js/jquery-1.8.2.min.js"></script>
+
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="../js/respond.src.js"></script>
+<script src="../js/jquery-ui-1.8.20.custom.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.flexslider.js"></script>
+<script src="../js/jquery.html5-placeholder-shim.js"></script>
+<script src="../js/jquery.colorbox.js"></script>
+<script src="../js/accordion.js"></script>
+<script src="../js/jquery.jcarousel.js"></script>
+<script src="../js/decra_tile.js"></script>
+
+<!--[if lt IE 9]>
+	<script src="http://www.decra.com.my/js/css3-mediaqueries.js"></script>
+<![endif]-->
+<!--end js-->
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/jquery-ui-1.8.20.custom.css">
+<link rel="stylesheet" href="../css/bootstrap.css"/>
+<link rel="stylesheet" href="../css/bootstrap-responsive.css"/>
+<link rel="stylesheet" href="../css/skin2.css" />
+
+
+<script>
+	
+    function changetile() {
+        var tile_label = $('#tile_label').val();
+        var roof_label = $('#roof_label').val();
+        var color_label = $('#color_label').val();
+        
+        $.ajax({
+            type : 'POST',
+            url : 'http://www.decra.com.my/home/changetile/',
+            dataType : 'json',
+            data: {
+                tile_label:tile_label,
+                roof_label:roof_label,
+                color_label:color_label
+            },
+            success : function(data){
+                var tile = data.tile_label;
+                var color = data.color_label;
+                
+                var changetile = '<img src="../../images/tiles/' + data.tile_label + '/' + data.color_label +  '.jpg" onerror="this.style.display=\'none\';" />';
+                
+                $('.tile_display').html(changetile);
+            },
+            error : function(XMLHttpRequest, textStatus, errorThrown) {
+            }
+        });
+    }
+    
+    $(window).load(function() {
+        $('.loading_image').css({display:'none'});
+        $('#milano1_value').css({display:'none'});
+        
+        $('#mycarousel').jcarousel();
+        $('#mycarousel').css({display:'block'});
+        $('#mycarousel2').jcarousel();
+        $('#mycarousel2').css({display:'block'});
+        $('#mycarousel3').jcarousel();
+        $('#mycarousel3').css({display:'block'});
+        $('#mycarousel4').jcarousel();
+        $('#mycarousel4').css({display:'block'});
+        $('#mycarousel5').jcarousel();
+        $('#mycarousel5').css({display:'block'});
+    });
+</script>
+</head>
+<body>
+	<div class="container myContentHeight">
+		<div class="row-fluid myContentHeight">
+			<div class="span12">
+				<div id="decra_tile" class="about_info">
+                    <!-- By Default Values Tile:Classic, trimoption: Barrel, color:cedar -->
+					<input type="hidden" id="tile_label" name="tile_label" value="Classic" />
+					<input type="hidden" id="roof_label" name="roof_label" value="barrel" />
+					<input type="hidden" id="color_label" name="color_label" value="Cedar" />
+					<div class="tile_appear">
+						<div class="loading_image"></div>
+						
+                        <!-- Default Panel for House -->
+						<div class="row-fluid">
+							<div class="span12 textCenter tile_display" style="min-height:614px;">
+								<img src="../images/tiles/Classic/Cedar.jpg" />
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						
+                        <!-- 1-Different types of profiles on the top-->
+						<div class="absolute_tile">
+							<div onclick="changehouse('Classic')" class="float_title"><img class="rooftop tile_border" id="Classic" src="../images/shots/classic.jpg" /></div>
+							<div onclick="changehouse('Shingle')" class="float_title"><img class="rooftop tile_unborder" id="Shingle" src="../images/shots/shingle.jpg" /></div>
+							<div onclick="changehouse('Heritage')" class="float_title"><img class="rooftop tile_unborder" id="Heritage" src="../images/shots/heritage.jpg" /></div>
+							<div onclick="changehouse('Milano')" class="float_title"><img class="rooftop tile_unborder" id="Milano" src="../images/shots/milano.jpg" /></div>
+							<div onclick="changehouse('Shake')" class="float_title"><img class="rooftop tile_unborder" id="Shake" src="../images/shots/shake.jpg" /></div>
+							<div class="clearfix"></div>
+
+						</div>
+
+                        
+	                    
+                        
+	                    
+                        <!-- 3-different types of colors on the bottom -->
+						<div class="absolute_adjust blackbox carouselClassic carousel_appear" id="wrap_jcarousel">
+							<ul class="jcarousel-skin-tango" id="mycarousel">
+                                
+								<li class="textCenter">
+								<div class="image_tile tile_select" id="ClassicCedar" onclick="changecolor('Cedar')">Cedar<img src="../images/swatches/classic/coffee_classic.jpg" /></div>
+								</li>
+                                <li class="textCenter">
+								<div class="image_tile tile_unselect" id="ClassicBurgundy" onclick="changecolor('Burgundy')">Burgundy<img src="../images/swatches/classic/burgundy_classic.jpg" /></div>
+								</li>
+								<li class="textCenter">
+								<div class="image_tile tile_unselect" id="ClassicCharcoal" onclick="changecolor('Charcoal')">Charcoal<img src="../images/swatches/classic/charcoal_classic.jpg" /></div>
+								</li>
+								<li class="textCenter">
+								<div class="image_tile tile_unselect" id="ClassicGarnet" onclick="changecolor('Garnet')">Garnet<img src="../images/swatches/classic/garnet_classic.jpg" /></div>
+								</li>
+								<li class="textCenter">
+								<div class="image_tile tile_unselect" id="ClassicGreenstone" onclick="changecolor('Greenstone')">Greenstone<img src="../images/swatches/classic/greenstone_classic.jpg" /></div>
+								</li>
+								<li class="textCenter">
+								<div class="image_tile tile_unselect" id="ClassicPepper" onclick="changecolor('Pepper')">Pepper<img src="../images/swatches/classic/pepper_classic.jpg" /></div>
+								</li>
+								<li class="textCenter">
+								<div class="image_tile tile_unselect" id="ClassicRosso" onclick="changecolor('Rosso')">Rosso<img src="../images/swatches/classic/rosso_classic.jpg" /></div>
+								</li>
+								<li class="textCenter">
+								<div class="image_tile tile_unselect" id="ClassicSage" onclick="changecolor('Sage')">Sage<img src="../images/swatches/classic/sage_classic.jpg" /></div>
+								</li>
+								<li class="textCenter">
+								<div class="image_tile tile_unselect" id="ClassicSapphire" onclick="changecolor('Sapphire')">Sapphire<img src="../images/swatches/classic/sapphire_classic.jpg" /></div>
+								</li>
+								<li class="textCenter">
+								<div class="image_tile tile_unselect" id="ClassicSienna" onclick="changecolor('Sienna')">Sienna<img src="../images/swatches/classic/sienna_classic.jpg" /></div>
+								</li>
+								<li class="textCenter">
+								<div class="image_tile tile_unselect" id="ClassicTeak" onclick="changecolor('Teak')">Teak<img src="../images/swatches/classic/teak_classic.jpg" /></div>
+								</li>
+								<li class="textCenter">
+								<div class="image_tile tile_unselect" id="ClassicTerracotta" onclick="changecolor('Terracotta')">Terracotta<img src="../images/swatches/classic/terracotta_classic.jpg" /></div>
+								</li>
+							</ul>
+						</div>
+	
+						<div class="absolute_adjust blackbox carouselShingle carousel_disappear" id="wrap_jcarousel">
+							<ul class="jcarousel-skin-tango" id="mycarousel2">
+                            <li class="textCenter">
+							<div class="image_tile tile_unselect" id="ShingleBark" onclick="changecolor('Bark')">Bark<img src="../images/swatches/shingle/bark_shingle.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_select" id="ShingleBlue" onclick="changecolor('Blue')">Delta Blue<img src="../images/swatches/shingle/delta_blue_shingle.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="ShingleEclipse" onclick="changecolor('Eclipse')">Eclipse<img src="../images/swatches/shingle/eclipse_shingle.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="ShinglePortland" onclick="changecolor('Portland')">Portland<img src="../images/swatches/shingle/portland_shingle.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="ShingleRavine" onclick="changecolor('Ravine')">Ravine<img src="../images/swatches/shingle/ravine_shingle.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="ShingleSunset" onclick="changecolor('Sunset')">Sunset<img src="../images/swatches/shingle/sunset_shingle.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="ShingleWillow" onclick="changecolor('Willow')">Willow<img src="../images/swatches/shingle/willow_shingle.jpg" /></div>
+							</li>
+							
+							
+							</ul>
+						</div>
+	
+						<div class="absolute_adjust blackbox carouselHeritage carousel_disappear" id="wrap_jcarousel">
+							<ul class="jcarousel-skin-tango" id="mycarousel3">
+                            
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="HeritageCedar" onclick="changecolor('Cedar')">Cedar<img src="../images/swatches/heritage/coffee_heritage.jpg" /></div>
+							</li>
+                            <li class="textCenter">
+							<div class="image_tile tile_select" id="HeritageBurgundy" onclick="changecolor('Burgundy')">Burgundy<img src="../images/swatches/heritage/burgundy_heritage.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="HeritageCharcoal" onclick="changecolor('Charcoal')">Charcoal<img src="../images/swatches/heritage/charcoal_heritage.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="HeritageGarnet" onclick="changecolor('Garnet')">Garnet<img src="../images/swatches/heritage/garnet_heritage.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="HeritageGreenstone" onclick="changecolor('Greenstone')">Greenstone<img src="../images/swatches/heritage/greenstone_heritage.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="HeritagePepper" onclick="changecolor('Pepper')">Pepper<img src="../images/swatches/heritage/pepper.jpg" /></div>
+							</li>
+                            <li class="textCenter">
+							<div class="image_tile tile_unselect" id="HeritageRosso" onclick="changecolor('Rosso')">Rosso<img src="../images/swatches/heritage/redwood_heritage.jpg" /></div>
+							</li>					
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="HeritageSage" onclick="changecolor('Sage')">Sage<img src="../images/swatches/heritage/sage_heritage.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="HeritageSapphire" onclick="changecolor('Sapphire')">Sapphire<img src="../images/swatches/heritage/sapphire.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="HeritageSienna" onclick="changecolor('Sienna')">Sienna<img src="../images/swatches/heritage/sienna_heritage.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="HeritageTeak" onclick="changecolor('Teak')">Teak<img src="../images/swatches/heritage/teak_heritage.jpg" /></div>
+							</li>
+                            <li class="textCenter">
+							<div class="image_tile tile_unselect" id="HeritageTerracotta" onclick="changecolor('Terracotta')">Terracotta<img src="../images/swatches/heritage/terracotta_heritage.jpg" /></div>
+							</li>
+							
+							</ul>
+						</div>
+	
+						<div class="absolute_adjust blackbox carouselMilano carousel_disappear" id="wrap_jcarousel">
+							<ul class="jcarousel-skin-tango" id="mycarousel4">
+                            
+							<li class="textCenter">
+							<div class="image_tile tile_select" id="MilanoCedar" onclick="changecolor('Cedar')">Cedar<img src="../images/swatches/milano/coffee_milano.jpg" /></div>
+							</li>
+                            <li class="textCenter">
+							<div class="image_tile tile_unselect" id="MilanoBurgundy" onclick="changecolor('Burgundy')">Burgundy<img src="../images/swatches/milano/burgundy_milano.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="MilanoCharcoal" onclick="changecolor('Charcoal')">Charcoal<img src="../images/swatches/milano/charcoal_milano.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="MilanoGarnet" onclick="changecolor('Garnet')">Garnet<img src="../images/swatches/milano/garnet_milano.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="MilanoGreenstone" onclick="changecolor('Greenstone')">Greenstone<img src="../images/swatches/milano/greenstone_milano.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="MilanoPepper" onclick="changecolor('Pepper')">Pepper<img src="../images/swatches/milano/pepper_milano.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="MilanoRosso" onclick="changecolor('Rosso')">Rosso<img src="../images/swatches/milano/rosso_milano.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="MilanoSage" onclick="changecolor('Sage')">Sage<img src="../images/swatches/milano/sage_milano.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="MilanoSapphire" onclick="changecolor('Sapphire')">Sapphire<img src="../images/swatches/milano/sapphire_milano.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="MilanoSienna" onclick="changecolor('Sienna')">Sienna<img src="../images/swatches/milano/sienna_milano.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="MilanoTeak" onclick="changecolor('Teak')">Teak<img src="../images/swatches/milano/teak_milano.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="MilanoTerracotta" onclick="changecolor('Terracotta')">Teak<img src="../images/swatches/milano/terracotta_milano.jpg" /></div>
+							</li>
+							</ul>
+						</div>
+	
+						<div class="absolute_adjust blackbox carouselShake carousel_disappear" id="wrap_jcarousel">
+							<ul class="jcarousel-skin-tango" id="mycarousel5">
+							
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="ShakeCedar" onclick="changecolor('Cedar')">Cedar<img src="../images/swatches/shake/coffee_shake.jpg" /></div>
+							</li>
+                            <li class="textCenter">
+							<div class="image_tile tile_select" id="ShakeBurgundy" onclick="changecolor('Burgundy')">Burgundy<img src="../images/swatches/shake/burgundy_shake.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="ShakeCharcoal" onclick="changecolor('Charcoal')">Charcoal<img src="../images/swatches/shake/charcoal_shake.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="ShakeGarnet" onclick="changecolor('Garnet')">Garnet<img src="../images/swatches/shake/garnet_shake.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="ShakeGreenstone" onclick="changecolor('Greenstone')">Greenstone<img src="../images/swatches/shake/greenstone_shake.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="ShakePepper" onclick="changecolor('Pepper')">Pepper<img src="../images/swatches/shake/pepper_shake.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="ShakeRosso" onclick="changecolor('Rosso')">Rosso<img src="../images/swatches/shake/rosso_shake.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="ShakeSage" onclick="changecolor('Sage')">Sage<img src="../images/swatches/shake/sage_shake.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="ShakeSapphire" onclick="changecolor('Sapphire')">Sapphire<img src="../images/swatches/shake/sapphire_shake.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="ShakeSienna" onclick="changecolor('Sienna')">Sienna<img src="../images/swatches/shake/sienna_shake.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="ShakeTeak" onclick="changecolor('Teak')">Teak<img src="../images/swatches/shake/teak_shake.jpg" /></div>
+							</li>
+							<li class="textCenter">
+							<div class="image_tile tile_unselect" id="ShakeTerracotta" onclick="changecolor('Terracotta')">Teak<img src="../images/swatches/shake/terracotta_shake.jpg" /></div>
+							</li>
+							</ul>
+						</div>
+						
+						<div class="tile_info redbox blackcolor">Design Your Roof program is provided as a guide only for selecting Decra colours and trims.  Please refer to <strong><a href="http://decraafrica.com/brochures/design/decra_sales.pdf" target="_blank" style="color:#000000">Decra actual colour selection chart and product samples</a></strong> if an accurate representation is required.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
